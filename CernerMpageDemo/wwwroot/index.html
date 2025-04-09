@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPage HUCA – FHIR & CCL</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>MPage HUCA</h1>
+        <p class="subtitle">Integración de datos clínicos con FHIR y CCL</p>
+
+        <!-- Switch de tema animado -->
+        <div class="theme-switch-wrapper">
+            <div id="themeSwitcher" class="theme-switch">
+                <div class="icon sun">☀️</div>
+                <div class="icon moon">🌙</div>
+                <div class="switch-ball"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2><i data-feather="users"></i> Pacientes (FHIR)</h2>
+            <button id="btnLoadPatients">Cargar pacientes</button>
+            <div id="patientsContainer" class="result-box"></div>
+        </section>
+
+        <section class="card">
+            <h2><i data-feather="activity"></i> Resultados de Laboratorio (CCL)</h2>
+            <button id="btnLoadLabResults">Cargar resultados</button>
+            <div id="labResultsContainer" class="result-box"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto HUCA • Desarrollado por César Moreno con ❤️ y .NET</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
