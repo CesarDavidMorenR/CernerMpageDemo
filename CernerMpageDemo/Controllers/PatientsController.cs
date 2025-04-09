@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using CernerMpageDemo.Services;
+using CernerMpageDemo.Models;
 
 namespace CernerMpageDemo.Controllers
 {
